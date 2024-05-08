@@ -34,7 +34,7 @@ def app_test():
         try:
             for _ in range(5):
                 # vote for yada
-                yada_select = driver.find_element(By.ID, "PDI_answer61165596") # PDI_answer61165598
+                yada_select = driver.find_element(By.ID, "PDI_answer61165598") # PDI_answer61165596
                 driver.execute_script("arguments[0].click();", yada_select)
                 driver.implicitly_wait(1)
 
