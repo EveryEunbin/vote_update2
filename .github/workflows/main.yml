@@ -1,9 +1,9 @@
 name: Run Python Selenium Firefox
 
 on:
+  schedule:
+   - cron: '*/10 * * * *'
   workflow_dispatch:
-  # schedule:
-  #  - cron: '*/10 * * * *'
 
 jobs:
   build:
