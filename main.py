@@ -7,7 +7,7 @@ options = Options()
 options.add_argument("--headless")
 
 def app():
-    url = 'https://www.thaiupdate.info/drama-series-2024-group-1/'
+    url = 'https://www.thaiupdate.info/ch3-drama-couples-we-love-part-1/'
 
     driver = webdriver.Firefox(options=options)
     driver.get(url)
@@ -15,11 +15,11 @@ def app():
     for _ in range(60): # ran 60 round 
         try:
             for _ in range(5):
-                yada_select = driver.find_element(By.ID, "PDI_answer61654935")
+                yada_select = driver.find_element(By.ID, "PDI_answer63024651")
                 driver.execute_script("arguments[0].click();", yada_select)
                 driver.implicitly_wait(1)
 
-                vote_button = driver.find_element(By.ID, "pd-vote-button13821191")
+                vote_button = driver.find_element(By.ID, "pd-vote-button14151953")
                 driver.execute_script("arguments[0].click();", vote_button)
                 driver.implicitly_wait(5)
 
