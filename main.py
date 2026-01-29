@@ -9,7 +9,7 @@ options.add_argument("--headless")
 
 driver = webdriver.Firefox(options=options)
 
-year = 2021
+year = 2020
 
 dates = pd.date_range(start=f'{year}-01-01', end=f'{year}-12-31', freq='D')
 
