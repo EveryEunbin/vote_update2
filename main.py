@@ -9,7 +9,7 @@ options.add_argument("--headless")
 
 driver = webdriver.Firefox(options=options)
 
-dates = pd.date_range(start='2023-01-01', end='2023-02-01', freq='D')
+dates = pd.date_range(start='2023-01-01', end='2023-12-31', freq='D')
 #csv_name = str(dates[0])[:7]
 #print(csv_name)
 
