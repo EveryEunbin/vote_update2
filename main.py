@@ -9,9 +9,9 @@ options.add_argument("--headless")
 
 driver = webdriver.Firefox(options=options)
 
-dates = pd.date_range(start='2023-01-01', end='2023-12-31', freq='D')
-#csv_name = str(dates[0])[:7]
-#print(csv_name)
+year = 2024
+
+dates = pd.date_range(start=f'{year}-01-01', end=f'{year}-12-31', freq='D')
 
 data_rows = []
 for date_time in dates:
@@ -45,5 +45,5 @@ for date_time in dates:
         #print(f'{date} has an error {e}')
 
 #df_rows = pd.DataFrame(data_rows, #columns=['date', 'lower', 'upper'])
-#df_rows.to_csv(f'{csv_name}.csv', index=False)
+#df_rows.to_csv(f'{year}.csv', index=False)
 driver.quit()
